@@ -15,7 +15,7 @@ public class EmployeeService extends Util implements EmployeeDAO {
     public void add(Employee employee) throws SQLException {
         PreparedStatement preparedStatement = null;
 
-        String sql = "INSERT INTO ADDRESS (ID, FIRST_NAME, LAST_NAME, BIRTHDAY, ADDRESS_ID) VALUES(?, ?, ?, ?, ?)";
+        String sql = "INSERT INTO EMPLOYEE (ID, FIRST_NAME, LAST_NAME, BIRTHDAY, ADDRESS_ID) VALUES(?, ?, ?, ?, ?)";
 
         try {
             preparedStatement = connection.prepareStatement(sql);

@@ -3,23 +3,24 @@ package DAO;
 import entity.EmplProj;
 import entity.Employee;
 
+import java.sql.SQLException;
 import java.util.List;
 
 public interface EmplProjDAO {
 
     //create
-    void add(EmplProj emplProj);
+    void add(EmplProj emplProj) throws SQLException;
 
     //read
-    List<EmplProj> getAll();
+    List<EmplProj> getAll() throws SQLException;
 
-    EmplProj getByEmployeeIdAndProjectId(Long employeeId, Long projectId);
+    EmplProj getByEmployeeIdAndProjectId(Long employeeId, Long projectId) throws SQLException;
 
     //update
-    void update(EmplProj emplProj);
+    void update(EmplProj emplProj) throws SQLException;
 
     //delete
-    void remove(EmplProj emplProj);
+    void remove(EmplProj emplProj) throws SQLException;
 
 
 }
