@@ -39,7 +39,7 @@ public class Employee {
         this.lastName = lastName;
     }
 
-    public Date getBirthday() {
+    public java.sql.Date getBirthday() {
         return birthday;
     }
 
