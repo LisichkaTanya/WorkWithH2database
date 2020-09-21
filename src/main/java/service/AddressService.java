@@ -1,6 +1,6 @@
 package service;
 
-import DAO.AddressDAO;
+import DAO.GenericDAO;
 import businessLogic.Util;
 import entity.Address;
 
@@ -8,7 +8,7 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class AddressService extends Util implements AddressDAO {
+public class AddressService extends Util implements GenericDAO<Address, Long> {
 
     Connection connection = getConnection();
 

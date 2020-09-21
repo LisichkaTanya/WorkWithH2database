@@ -18,23 +18,23 @@ public class Domain {
         EmplProjService emplProjService = new EmplProjService();
 
         Address address = new Address();
-        address.setId(1L);
+        address.setId(2L);
         address.setCountry("Russia");
         address.setCity("Moscow");
         address.setStreet("Novii Arbat, 10");
         address.setPostCode("110110");
 
         Employee employee = new Employee();
-        employee.setId(1L);
-        employee.setFirstName("Tatiana");
-        employee.setLastName("Solomatina");
+        employee.setId(2L);
+        employee.setFirstName("Evgeny");
+        employee.setLastName("Solomatin");
         employee.setAddressID(address.getId());
         Calendar calendar = Calendar.getInstance();
-        calendar.set(1982, Calendar.JULY, 15);
+        calendar.set(1978, Calendar.NOVEMBER, 20);
         employee.setBirthday(new java.sql.Date(calendar.getTime().getTime()));
 
         Project project = new Project();
-        project.setId(1L);
+        project.setId(2L);
         project.setTitle("Java course");
 
         EmplProj emplProj = new EmplProj();

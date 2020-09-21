@@ -1,5 +1,6 @@
 package service;
 
+import DAO.GenericDAO;
 import DAO.ProjectDAO;
 import businessLogic.Util;
 import entity.Project;
@@ -8,7 +9,7 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ProjectService extends Util implements ProjectDAO {
+public class ProjectService extends Util implements GenericDAO<Project, Long> {
 
     Connection connection = getConnection();
 

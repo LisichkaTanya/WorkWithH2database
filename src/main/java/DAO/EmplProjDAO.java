@@ -1,7 +1,6 @@
 package DAO;
 
 import entity.EmplProj;
-import entity.Employee;
 
 import java.sql.SQLException;
 import java.util.List;

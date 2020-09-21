@@ -1,6 +1,7 @@
 package service;
 
 import DAO.EmployeeDAO;
+import DAO.GenericDAO;
 import businessLogic.Util;
 import entity.Employee;
 
@@ -8,7 +9,7 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class EmployeeService extends Util implements EmployeeDAO {
+public class EmployeeService extends Util implements GenericDAO<Employee, Long> {
 
     Connection connection = getConnection();
     @Override
